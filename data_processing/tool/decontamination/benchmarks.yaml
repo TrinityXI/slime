@@ -1,0 +1,50 @@
+# 评测数据集路径: /work/projects/polyullm/llm-eval/datasets
+MMLU-Pro:
+  local_path: /work/projects/polyullm/llm-eval/datasets/MMLU-Pro
+  # split [Optional]: 对应hugginface dataset的split字段，默认不加split字段，读取数据集所有数据，
+  # 如果需要指定split则加该字段 (例如MMLU-Pro有validation和test两个split，则指定split为test)
+  split: test
+  prompt_key: question
+MMLU:
+  local_path: /work/projects/polyullm/llm-eval/datasets/mmlu
+  # subset [Optional]: 对应hugginface dataset的subset字段，默认不加subset字段
+  # 如果需要指定subset则加该字段 (例如MMLU有多个subset，则指定subset为all)
+  subset: all
+  split: test
+  prompt_key: question
+SuperGPQA:
+  local_path: /work/projects/polyullm/llm-eval/datasets/SuperGPQA
+  split: train
+  prompt_key: question
+AIME-2024:
+  local_path: /work/projects/polyullm/llm-eval/datasets/aime_2024
+  split: train
+  prompt_key: problem
+AIME2025-I:
+  local_path: /work/projects/polyullm/llm-eval/datasets/AIME2025
+  subset: AIME2025-I
+  split: test
+  prompt_key: question
+AIME2025-II:
+  local_path: /work/projects/polyullm/llm-eval/datasets/AIME2025
+  subset: AIME2025-II
+  split: test
+  prompt_key: question
+MATH-500:
+  local_path: /work/projects/polyullm/llm-eval/datasets/MATH-500
+  split: test
+  prompt_key: problem
+GSM8K-main:
+  local_path: /work/projects/polyullm/llm-eval/datasets/GSM8K
+  split: test
+  subset: main
+  prompt_key: question
+GSM8K-socratic:
+  local_path: /work/projects/polyullm/llm-eval/datasets/GSM8K
+  subset: socratic
+  split: test
+  prompt_key: question
+GPQA-Diamond:
+  local_path: /work/projects/polyullm/llm-eval/datasets/gpqa_diamond
+  split: train
+  prompt_key: Question
